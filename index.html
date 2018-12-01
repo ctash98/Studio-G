@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>El Revolución Del Baile (Temporary Title)</title>
+			<meta charset="UTF-8">
+			<meta name="description" content="Hybrid Game Produced By Studio-G">
+			<meta name="keywords" content="HTML Dance Game">
+			<meta name="author" content="Studio-G">
+			<link rel="shortcut icon" type="image/ico" href="Assets/favicon.ico"/>
+	
+	</head>
+	
+	<body class="clearfix">
+	
+		<div id="overlay">
+			<div id="wrapper">
+					<div id="map-Scene" class="main-wrapper" style="display:none">
+						<canvas id="map" width="512" height="512"></canvas>
+					</div>
+					
+					<div id="battle-Scene" class="main-wrapper" style="display:none">
+						<canvas id="battle" width="1024" height="1024"></canvas>
+					</div>
+					
+					<div id="cheats">
+						<button id="show_battle" onclick="changeState('battle-scene')">SHOW BATTLE</button><br/>
+						<!--<button id="start">Start</button>-->
+						<!--<button id="faster">Faster</button>-->
+						<button id="show_map" onclick="changeState('map-scene')">SHOW MAP</button><br/>
+						<button id="show_buttons" onclick="changeState('menu-scene')">SHOW BUTTONS</button><br/>
+						<button id="show_Zilch" onclick="changeState('Zilch')">SHOW Zilch</button><br/>
+					</div>
+					<div id="buttons" name="buttonz">
+						<button id="play" onclick="changeState('map-scene')">PLAY</button><br/>
+						<button id="menu">Options (Future)</button><br/>
+						<button id="high_score">Achievements (Future) </button><br/>
+						<button id="show_debug" onclick="changeState('Debug')">Show Debugger Tools</button><br/>
+					</div>
+			</div>
+		</div>
+	</body>
+	
+	<link rel="stylesheet" href="CSS/style.css">
+	<script type="text/javascript" src="Javascript/common.js"></script>
+	<script type="text/javascript" src="Javascript/mapGame.js"></script>
+	<script type="text/javascript" src="Javascript/battleGame.js"></script>
+	<script type="text/javascript" src="Javascript/main.js"></script>
+	

@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+	position: absolute;
+}
+
+* {
+	box-sizing: inherit;
+	overflow: auto;
+}
+
+#overlay {
+	height: 100%;
+	width: 100%;
+	padding: 0%;
+	margin: 0%;
+}
+
+#wrapper {
+    position: fluid;
+	width: 100%;
+	height: 100%;
+    top: 0;
+    left: 0;
+	z-index:-5;
+	padding: 0%;
+	margin: 0%;
+	border: solid black 5px;
+    background: #00004d;
+	-webkit-user-select: none;
+	display: block;
+}
+
+#map-Scene {
+	position: relative;
+	top: 0%;
+	left: 0%;
+	height: 512px;
+	width: 512px;
+	overflow: hidden;
+	border:red 10px solid; 
+	background-color: powderblue;
+	margin: 0px;
+	z-index: 3;
+	padding: 0%;
+	margin: 0%;
+}
+
+#battle-Scene {
+	position: relative;
+	top: 0%;
+	left: 0%;
+	height: 1024;
+	width: 1024px;
+	overflow: hidden;
+	border:red 10px solid; 
+	background-color: powderblue;
+	margin: 0px;
+	z-index: 3;
+	padding: 0%;
+	margin: 0%;
+}
+
+
+#buttons {
+	position: relative;
+	top: 10%;
+	left: +40%;
+	margin: 5%;
+	z-index: 4;
+}
+
+button {
+	border-radius: 30%;
+	background-color: #ffd700;
+	border: black;
+	box-shadow: 0 5px #999;
+	text-align: center;
+	color: black;
+	font-weight:bold;
+	box-sizing: none;
+}
+
+button:hover {
+	background-color: #e6c300
+}
+
+button:active {
+  background-color: #e6c300;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
